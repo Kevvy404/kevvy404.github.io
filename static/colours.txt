@@ -1,0 +1,2 @@
+nav bar colour: #FFFFFF
+logo colour: #97C7C3
