@@ -4,36 +4,58 @@
 <link rel="stylesheet" href="static/style.css">
 <body>
     <div class="container">
-        <nav>
-            <div class="logo">K L</div>
-            <ul class="nav_items">
-                <li>
-                    <a href="aboutMe.html">About Me</a>
-                </li>
-                <li>
-                    <a href="projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="contactMe.html">Contact Me</a>
-                </li>
-            </ul>
-            <div class="links">
-                <a href="#"><i class="fa fa-linkedin-square"></i></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-            </div>
-        </nav>
-
-        <div class="wrapper">
-            <div class="cols cols0">
-                <span class="topline"> WELCOME </span>
-                <h1> I'm <span class="multiText"> Kevin</span></h1>
-                <p>###########  SOME TEXT HERE  ###########</p>
-                <div class="btn">
-                    <button> Download Resume </button>
+        <div class="shapes">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="content">
+            <nav>
+                <div class="logo">K L</div>
+                <ul class="nav_items">
+                    <li>
+                        <a href="aboutMe.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="contactMe.html">Contact Me</a>
+                    </li>
+                </ul>
+                <div class="links">
+                    <a href="#"><i class="fa fa-linkedin-square"></i></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-github-square"></i></a>
+                </div>
+            </nav>
+            <div class="wrapper">
+                <div class="cols cols0">
+                    <span class="topline"> WELCOME </span>
+                    <h1> I'm <span class="multiText"></span></h1>
+                    <p>###########  SOME TEXT HERE  ###########</p>
+                    <div class="btn">
+                        <button> Download Resume </button>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.multiText', {
+            strings: ["Kevin", "刘家乐", "a Student", "a Developer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
 </body>
 </html>
