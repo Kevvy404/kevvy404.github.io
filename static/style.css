@@ -18,7 +18,7 @@ section{
 }
 
 #aboutMe,
-#projects,
+#projects
 {
    display: flex;
 }
@@ -266,5 +266,35 @@ button{
 }
 
 button:hover{
-    background-color: #73E2CA ;
+    background-color: #73E2CA;
+}
+
+#current{
+    font-size: 25px;
+    color: #97C7C3;
+}
+
+#status{
+    color: #73E2CA;
+}
+
+#aboutMe,
+#projects,
+#contactMe{
+    font-size: 80px;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    .logo{
+        font-size: 30px;
+    }
+    
+    h1{
+        font-size: 3em;
+    }
 }
