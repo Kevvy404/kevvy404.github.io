@@ -17,10 +17,35 @@ section{
     scroll-snap-stop: always;
 }
 
-#aboutMe,
-#projects
-{
-   display: flex;
+#current{
+    font-size: 25px;
+    color: #97C7C3;
+}
+
+#status{
+    color: #73E2CA;
+}
+
+.aboutMe,
+.projects,
+.contactMe{
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#aboutMeTxt {
+    justify-content: center;
+    align-items: center;
+    margin: 20px 75px;
+    width: 90%;
+    height: 80%;
+    border-radius: 25px;
+    background-color: #97C7C3;
+    opacity: 0.3;
 }
 
 .index{
@@ -238,9 +263,10 @@ h1{
 
 p{
     display: block;
+    padding: 10px 20px;
     width: 90%;
-    font-size: 1.2rem;
-    color: #97C7C3;
+    font-size: 1.6rem;
+    color: black;
 }
 
 .btn{
@@ -267,25 +293,6 @@ button{
 
 button:hover{
     background-color: #73E2CA;
-}
-
-#current{
-    font-size: 25px;
-    color: #97C7C3;
-}
-
-#status{
-    color: #73E2CA;
-}
-
-#aboutMe,
-#projects,
-#contactMe{
-    font-size: 80px;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
 }
 
 @media (max-width: 768px) {
