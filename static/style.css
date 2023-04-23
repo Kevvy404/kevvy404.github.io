@@ -17,12 +17,19 @@ section{
     scroll-snap-stop: always;
 }
 
+.status{
+    display: block;
+    position: relative;
+    font-size: 35px;
+}
+
 #current{
     font-size: 25px;
     color: #97C7C3;
 }
 
-#status{
+#c_status{
+    margin-top: -10px;
     color: #73E2CA;
 }
 
@@ -37,28 +44,26 @@ section{
     text-align: center;
 }
 
-#aboutMeTxt {
+#aboutMeTxt{
     justify-content: center;
     align-items: center;
     margin: 20px 75px;
-    width: 90%;
-    height: 80%;
+    padding-top: 80px;
+    width: 50%;
+    height: 60%;
     border-radius: 25px;
     background-color: #97C7C3;
     opacity: 0.3;
+}
+
+#txt{
+    font-size: 30px;
 }
 
 .index{
     height: 100vh;
     align-items: center;
 }
-
-/* p{
-    font-size: 20px;
-    color: #97C7C3;
-    margin: 20px 0px;
-    position: relative;
-} */
 
 .landing{
     width: 100%;
@@ -263,16 +268,16 @@ h1{
 
 p{
     display: block;
-    padding: 10px 20px;
+    padding-top: 10px;
     width: 90%;
     font-size: 1.6rem;
     color: black;
 }
 
 .btn{
+    display: block;
     position: relative;
     width: 100%;
-    left: 150px;
 }
 
 button{
@@ -287,7 +292,6 @@ button{
     padding: 8px 14px;
     margin: 40px 5px;
     letter-spacing: 2px;
-    text-transform: capitalize;
     box-shadow: 0 15px 10px rgba(0,0,0,0.4);
 }
 
