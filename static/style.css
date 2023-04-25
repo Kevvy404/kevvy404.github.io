@@ -72,8 +72,7 @@ section{
     width: 50%;
     height: 60%;
     border-radius: 25px;
-    background-color: var(--shape-colour);
-    opacity: 0.3;
+    background-color: var(--container-colour);
 }
 
 #txt{
@@ -291,7 +290,7 @@ p{
     padding-top: 10px;
     width: 90%;
     font-size: 1.6rem;
-    color: black;
+    color: var(--welcome-colour);
 }
 
 .btn{
