@@ -36,11 +36,25 @@
                             <a href="#"><i class="fa fa-linkedin-square"></i></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
                             <a href="#"><i class="fa fa-github-square"></i></a>
+                            <a href="#"><i class="fa fa-sun-o" id="toggleDark"></i></a>
                         </div>
+                        <script>
+                            var icon = document.getElementById("toggleDark");
+                            icon.onclick = function() {
+                                document.body.classList.toggle("dark-theme");
+                                if (document.body.classList.contains("dark-theme")) {
+                                    icon.classList.remove("fa-sun-o");
+                                    icon.classList.add("fa-moon-o");
+                                } else {
+                                    icon.classList.remove("fa-moon-o");
+                                    icon.classList.add("fa-sun-o");
+                                }
+                            }
+                        </script>
                     </nav>
                     <div class="wrapper">
                         <div class="cols cols0">
-                            <span class="topline"> WELCOME </span>
+                            <span class="topline" id="Welcome"> WELCOME </span>
                             <h1> I'm <span class="multiText"></span></h1>
                             <div class="status">
                                 <p id="current">

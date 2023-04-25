@@ -1,6 +1,15 @@
 domain: kevvyliu.me
 
+#Primary Colours
+
 background clour: #f3f5f9
 logo colour: #97C7C3
 highlight colour: #50FAD6
 dimmed highlight colour: #73E2CA
+
+#Secondary Colours
+
+background colour: #7D7B7E
+logo colour: #983BCD
+highlight colour:
+dimmed highlight colour:
