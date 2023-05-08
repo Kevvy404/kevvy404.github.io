@@ -65,30 +65,26 @@ section{
 }
 
 #aboutMeTxt {
+    float: left;
     display: flex;
-    justify-content: center;
-    margin: 20px 30px;
-    margin-left: 150px;
-    padding-top: 100px;
-    width: 70%;
+    margin-top: 50px;
+    width: 50%;
     height: 60%;
-    border-radius: 20px;
     background-color: var(--container-colour);
 }
 
 #txt {
-    font-size: 25px;
-    margin-left: 0; /* Reset any existing margin */
-    padding-left: 20px; /* Set the desired margin */
+    font-size: 20px;
+    margin-left: 0;
+    padding-left: 20px;
     text-indent: 0;
-
 }
 
 #pfp{
-    scale: 1.3;
-    margin-left: 200px;
-    margin-top: 80px;
+    scale: 50%;
     border-radius: 5%;
+    float: right;
+    width: 50%;
 }
 
 .index{
