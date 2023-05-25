@@ -9,7 +9,7 @@
 }
 
 :root{
-    --primary-colour: #f3f5f9;
+    --primary-colour: #F3F5F9;
     --welcome-colour: black;
     --secondary-colour: #73E2CA;
     --shape-colour: #97C7C3;
@@ -54,6 +54,7 @@ section{
 }
 
 .aboutMe,
+.skills,
 .projects,
 .contactMe{
     font-size: 14px;
@@ -67,24 +68,38 @@ section{
 #aboutMeTxt {
     float: left;
     display: flex;
-    margin-top: 50px;
-    width: 50%;
-    height: 60%;
+    margin-top: 40px;
+    height: 70%;
     background-color: var(--container-colour);
 }
 
 #txt {
     font-size: 20px;
-    margin-left: 0;
+    margin-top: 120px;
+    margin-left: 50px;
+    width: 50%;
     padding-left: 20px;
     text-indent: 0;
 }
 
 #pfp{
-    scale: 50%;
+    scale: 85%;
+    margin-left: 150px;
     border-radius: 5%;
     float: right;
-    width: 50%;
+}
+
+.skill-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.progress{
+    margin-top: 100px;
 }
 
 .index{
