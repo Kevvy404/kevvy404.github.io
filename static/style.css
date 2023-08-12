@@ -102,6 +102,10 @@ section{
     margin-top: 100px;
 }
 
+h4{
+    color: var(--welcome-colour);
+}
+
 .index{
     height: 100vh;
     align-items: center;
