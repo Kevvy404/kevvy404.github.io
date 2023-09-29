@@ -89,21 +89,33 @@ section{
     float: right;
 }
 
+#skills{
+    padding-bottom: 100px;
+}
+
 .skill-container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
 }
 
-.progress{
-    margin-top: 100px;
-}
-
-h4{
+.skill-name{
     color: var(--welcome-colour);
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+.skill-bar{
+    height: 14px;
+    background-color: var(--primary-colour);
+    border-radius: 3px;
+}
+
+.percentage{
+    height: 14px;
+    background: var(--secondary-colour);
 }
 
 .index{
