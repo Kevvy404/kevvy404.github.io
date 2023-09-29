@@ -64,13 +64,49 @@ section{
     justify-content: center;
     text-align: center;
 }
+.about{
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.about img{
+    height: auto;
+    width: 360px;
+    margin: 50px;
+    border-radius: 4%;
+}
+
+/* .aboutTxt{
+    width: 500px;
+} */
+
+#txt{
+    width: 700px;
+    color: var(--welcome-colour);
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 
+#aboutMeContainer {
+    width: 50%;
+    margin-left: 50px;
+    padding-left: 20px;
+    text-indent: 0;
+}
 
 #aboutMeTxt {
     float: left;
     display: flex;
     margin-top: 40px;
     height: 70%;
-    background-color: var(--container-colour);
 }
 
 #txt {
@@ -82,18 +118,27 @@ section{
     text-indent: 0;
 }
 
+.imageContainer {
+    scale: 30%;
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 50px;
+    padding-left: 20px;
+    text-indent: 0;
+}
+
 #pfp{
     scale: 85%;
     margin-left: 150px;
     border-radius: 5%;
     float: right;
-}
+} */
 
 #skills{
     padding-bottom: 100px;
 }
 
-.skill-container{
+/* .skill-container{
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
@@ -111,7 +156,7 @@ section{
     height: 14px;
     background-color: var(--primary-colour);
     border-radius: 3px;
-}
+} */
 
 .percentage{
     height: 14px;
