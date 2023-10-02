@@ -473,7 +473,7 @@ p{
 .back4,
 .back5,
 .back6{
-    background-color: var(--shape-colour);
+    background-color: lightgrey;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -490,6 +490,16 @@ p{
     font-size: 25px;
     color: var(--welcome-colour);
     text-align: center;
+}
+
+.container a{
+    color: var(--shape-colour);
+    font-size: 50px;
+    margin: 20px 10px
+}
+
+.container a:hover{
+    color: var(--highlight-colour);
 }
 
 button{
