@@ -9,172 +9,211 @@
 <link rel="stylesheet" href="static/style.css">
 <link rel="shortcut icon" type="image/png" href="static/imgs/faviconLight.png" id="favicon">
 <body>
-    <div class="container">
-        <section class="index">
-            <div class="landing">
-                <div class="shapes">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                    <nav>
-                        <span class="logo"> K L </span>
-                        <!-- <a href="index.html" class="logo">K L</a> -->
-                        <ul class="nav_items">
-                            <li>
-                                <a href="#about">About Me</a>
-                            </li>
-                            <li>
-                                <a href="#project">Projects</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact Me</a>
-                            </li>
-                        </ul>
-                        <div class="links">
-                            <a href="https://www.linkedin.com/in/kevinliu361/"><i class="fa fa-linkedin-square"></i></a>
-                            <a href="https://www.instagram.com/kevvy404/"><i class="fa fa-instagram"></i></a>
-                            <a href="https://github.com/Kevvy404?tab=repositories"><i class="fa fa-github-square"></i></a>
-                            <a href="#"><i class="fa fa-sun-o" id="toggleDark"></i></a>
-                        </div>
-                        <script>
-                            var icon = document.getElementById("toggleDark");
-                            var favicon = document.getElementById("favicon");
+    <section class="index">
+        <div class="landing">
+            <div class="shapes">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+                <nav>
+                    <span class="logo"> K L </span>
+                    <!-- <a href="index.html" class="logo">K L</a> -->
+                    <ul class="nav_items">
+                        <li>
+                            <a href="#about">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#project">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact Me</a>
+                        </li>
+                    </ul>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/kevinliu361/"><i class="fa fa-linkedin-square"></i></a>
+                        <a href="https://www.instagram.com/kevvy404/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/Kevvy404?tab=repositories"><i class="fa fa-github-square"></i></a>
+                        <a href="#"><i class="fa fa-sun-o" id="toggleDark"></i></a>
+                    </div>
+                    <script>
+                        var icon = document.getElementById("toggleDark");
+                        var favicon = document.getElementById("favicon");
 
-                            icon.onclick = function() {
-                                document.body.classList.toggle("dark-theme");
-                                if (document.body.classList.contains("dark-theme")) {
-                                    icon.classList.remove("fa-sun-o");
-                                    icon.classList.add("fa-moon-o");
-                                    favicon.href = "static/imgs/faviconDark.png";
+                        icon.onclick = function() {
+                            document.body.classList.toggle("dark-theme");
+                            if (document.body.classList.contains("dark-theme")) {
+                                icon.classList.remove("fa-sun-o");
+                                icon.classList.add("fa-moon-o");
+                                favicon.href = "static/imgs/faviconDark.png";
 
-                                } else {
-                                    icon.classList.remove("fa-moon-o");
-                                    icon.classList.add("fa-sun-o");
-                                    favicon.href = "static/imgs/faviconLight.png";
-                                }
+                            } else {
+                                icon.classList.remove("fa-moon-o");
+                                icon.classList.add("fa-sun-o");
+                                favicon.href = "static/imgs/faviconLight.png";
                             }
-                        </script>
-                    </nav>
-                    <div class="wrapper">
-                        <div class="cols cols0">
-                            <span class="topline" id="Welcome"> WELCOME </span>
-                            <h1> I'm <span class="multiText"></span></h1>
-                            <div class="status">
-                                <p id="current">
-                                    CURRENT STATUS:
-                                </p>
-                                <p id="c_status">
-                                    Studying at the University of Exeter
-                                </p>
-                            </div>
-                            <div class="btn">
-                                <button> Download Resume </button>
-                            </div>
+                        }
+                    </script>
+                </nav>
+                <div class="wrapper">
+                    <div class="cols cols0">
+                        <span class="topline" id="Welcome"> WELCOME </span>
+                        <h1> I'm <span class="multiText"></span></h1>
+                        <div class="status">
+                            <p id="current">
+                                CURRENT STATUS:
+                            </p>
+                            <p id="c_status">
+                                Studying at the University of Exeter
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <button> Download Resume </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-            <script>
-                var typed = new Typed('.multiText', {
-                    strings: ["Kevin", "刘家乐", "a Student", "a Developer"],
-                    typeSpeed: 100,
-                    backSpeed: 100,
-                    loop: true
-                });
-            </script>
-        </section>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('.multiText', {
+                strings: ["Kevin", "刘家乐", "a Student", "a Developer"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            });
+        </script>
+    </section>
 
-        <section class="about" id="about">
-            <div class="main">
-                <img src="static/imgs/pfp.JPG" id="pfp">
-                <div aboutTxt>
-                    <h1 id="aboutH1">About Me</h2>
-                    <p id="txt">
-                        Hi! I'm currently a second-year Computer Science student at the University of Exeter. 
-                        I'm known for being hardworking and enthusiastic, always eager to learn new skills and better myself. 
-                        As a team player, I thrive in collaborative environments, but I'm also capable of working independently.
-                        My strong organisational skills allow me to manage my time effectively. 
-                        Additionally, my creativity enables me to think innovatively and come up with fresh ideas. 
-                        I enjoy front-end development as it allows my creativity to shine through although I am also interested in back-end development.
-                        Back-end development is an area where i would like to improve on as I believe it is a crucial skill to have as a developer.
+    <section class="about" id="about">
+        <div class="main">
+            <img src="static/imgs/pfp.JPG" id="pfp">
+            <div aboutTxt>
+                <h1 id="aboutH1">About Me</h2>
+                <p id="txt">
+                    Hi! I'm currently a second-year Computer Science student at the University of Exeter. 
+                    I'm known for being hardworking and enthusiastic, always eager to learn new skills and better myself. 
+                    As a team player, I thrive in collaborative environments, but I'm also capable of working independently.
+                    My strong organisational skills allow me to manage my time effectively. 
+                    Additionally, my creativity enables me to think innovatively and come up with fresh ideas. 
+                    I enjoy front-end development as it allows my creativity to shine through although I am also interested in back-end development.
+                    Back-end development is an area where i would like to improve on as I believe it is a crucial skill to have as a developer.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="project">
+        <h1 id="projects">Projects</h1>
+        <div class="container">
+            <div class="card">
+                <div class="front1"></div> 
+                <div class="back1">
+                    <h2>Streatham Quest</h2>
+                    <p>
+                        As a group, we had to create a campus sustainability game for the University of Exeter.
+                        We decided to create a interactive game where students can go to each building and partake in
+                        minigames to gain xp and climb the leaderboard.
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="projects" id="project">
-            <h1 id="projects">Projects</h1>
-            <div class="card" id="card1">
-                <p>
-                    As a group, we had to create a campus sustainability game for the University of Exeter.
-                    We decided to create a interactive game where students can go to each building and partake in
-                    minigames to gain xp and climb the leaderboard.
-                </p>
+        <div class="container">
+            <div class="card">
+                <div class="front2"></div>
+                <div class="back2">
+                    <h2>Tetris</h2>
+                    <p>
+                        As a group, we had to create a campus sustainability game for the University of Exeter.
+                        We decided to create a interactive game where students can go to each building and partake in
+                        minigames to gain xp and climb the leaderboard.
+                    </p>
+                </div>
             </div>
-            <div class="card" id="card2">
-                <p>
-                    As a group, we had to create a campus sustainability game for the University of Exeter.
-                    We decided to create a interactive game where students can go to each building and partake in
-                    minigames to gain xp and climb the leaderboard.
-                </p>
-            </div>
-            <div class="card" id="card3">
-                <p>
-                    As a group, we had to create a campus sustainability game for the University of Exeter.
-                    We decided to create a interactive game where students can go to each building and partake in
-                    minigames to gain xp and climb the leaderboard.
-                </p>
-            </div>
-            <div class="card" id="card4">
-                <p>
-                    As a group, we had to create a campus sustainability game for the University of Exeter.
-                    We decided to create a interactive game where students can go to each building and partake in
-                    minigames to gain xp and climb the leaderboard.
-                </p>
-            </div>
-            <div class="card" id="card5">
-                <p>
-                    As a group, we had to create a campus sustainability game for the University of Exeter.
-                    We decided to create a interactive game where students can go to each building and partake in
-                    minigames to gain xp and climb the leaderboard.
-                </p>
-            </div>
-            <div class="card" id="card6">
-                <p>
-                    As a group, we had to create a campus sustainability game for the University of Exeter.
-                    We decided to create a interactive game where students can go to each building and partake in
-                    minigames to gain xp and climb the leaderboard.
-                </p>
-            </div>
-        </section>
+        </div>
 
-        <section class="contactMe" id="contact">
-            <h1 id="contactMe">Contact Me</h1>  
-            <div class="CMcontainer">
-                <form action="https://formspree.io/f/myyqbpzz" method="POST">
-                    <h2>GET IN TOUCH</h2>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    <textarea id="message" rows="4" name="message" placeholder="Message" required></textarea>
-                    <button type="submit" id="submit">Send Message</button>
-                </form>
+        <div class="container">
+            <div class="card">
+                <div class="front3"></div>
+                <div class="back3">
+                    <h2>Personal Website</h2>
+                    <p>
+                        As a group, we had to create a campus sustainability game for the University of Exeter.
+                        We decided to create a interactive game where students can go to each building and partake in
+                        minigames to gain xp and climb the leaderboard.
+                    </p>
+                </div>
             </div>
-            <div class="linksBtm">
-                <a href="https://www.linkedin.com/in/kevinliu361/"><i class="fa fa-linkedin-square"></i></a>
-                <a href="https://www.instagram.com/kevvy404/"><i class="fa fa-instagram"></i></a>
-                <a href="https://github.com/Kevvy404?tab=repositories"><i class="fa fa-github-square"></i></a>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front4"></div>
+                <div class="back4">
+                    <h2>Weather App</h2>
+                    <p>
+                        As a group, we had to create a campus sustainability game for the University of Exeter.
+                        We decided to create a interactive game where students can go to each building and partake in
+                        minigames to gain xp and climb the leaderboard.
+                    </p>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front5"></div>
+                <div class="back5">
+                    <h2>Multi-threaded Card game</h2>
+                    <p>
+                        As a group, we had to create a campus sustainability game for the University of Exeter.
+                        We decided to create a interactive game where students can go to each building and partake in
+                        minigames to gain xp and climb the leaderboard.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front6"></div>
+                <div class="back6">
+                    <h2>Cycling race management</h2>
+                    <p>
+                        As a group, we had to create a campus sustainability game for the University of Exeter.
+                        We decided to create a interactive game where students can go to each building and partake in
+                        minigames to gain xp and climb the leaderboard.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contactMe" id="contact">
+        <h1 id="contactMe">Contact Me</h1>  
+        <div class="CMcontainer">
+            <form action="https://formspree.io/f/myyqbpzz" method="POST">
+                <h2>GET IN TOUCH</h2>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <textarea id="message" rows="4" name="message" placeholder="Message" required></textarea>
+                <button type="submit" id="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="linksBtm">
+            <a href="https://www.linkedin.com/in/kevinliu361/"><i class="fa fa-linkedin-square"></i></a>
+            <a href="https://www.instagram.com/kevvy404/"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/Kevvy404?tab=repositories"><i class="fa fa-github-square"></i></a>
+        </div>
+    </section>
 </body>
 </html>
