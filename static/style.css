@@ -83,7 +83,9 @@ section{
 } */
 
 #txt{
+    margin-top: 50px;
     width: 700px;
+    font-size: 20px;
     color: var(--welcome-colour);
 }
 
@@ -132,6 +134,13 @@ form input, form textarea{
     outline: none;
     background-color: var(--input-colour);
     font-size: 16px;
+}
+
+.linksBtm a{
+    font-size: 40px;
+    color: var(--shape-colour);
+    margin: 20px 10px;
+    margin-bottom: 100px;
 }
 
 /* .skill-container{
