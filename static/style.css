@@ -530,4 +530,13 @@ button:hover{
     h1{
         font-size: 3em;
     }
+
+    .about h1{
+        padding-left: 0px;
+    }
+
+    .CMcontainer{
+        height: 100%;
+        width: 300px;
+    }
 }
