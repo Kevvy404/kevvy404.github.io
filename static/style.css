@@ -392,6 +392,55 @@ p{
     position: relative;
     width: 100%;
 }
+.card{
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: border-box;
+    cursor: pointer;
+    margin: 10px 40px;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid var(--welcome-colour);
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+}
+
+.card h5{
+    font-size: 1.6rem;
+}
+
+.card p{
+    visibility: hidden;
+}
+
+#card1{
+    background-image: url(/static/imgs/StreathamGo.png);
+}
+
+#card2{
+    background-image: url(/static/imgs/personalWebsite.png);
+    background-size: 530px;
+    background-repeat: no-repeat;
+}
+
+#card3{
+    background-image: url(/static/imgs/tetris.png);
+}
+
+#card4{
+    background-image: url(/static/imgs/WeatherApp.png);
+    background-repeat: no-repeat;
+    background-size: 300px 400px;
+}
+
+#card5{
+    background-image: url(/static/imgs/cardGame.jpg);
+}
+
+#card6{
+    background-image: url(/static/imgs/cycling_management.jpg);
+}
 
 button{
     outline: none;
