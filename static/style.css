@@ -8,10 +8,28 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    --primary-colour: #F3F5F9;
+    --welcome-colour: black;
+    --secondary-colour: #73E2CA;
+    --shape-colour: #97C7C3;
+    --highlight-colour: #50FAD6;
+    --input-colour: #bcbcbc;
+}
+
+.dark-theme{
+    --primary-colour: #646264;
+    --welcome-colour: #F3F5F9;
+    --secondary-colour: #D69DE6;
+    --shape-colour: #DD60FF;
+    --highlight-colour: #E811FE;
+    --input-colour: #bcbcbc;
+}
+
 section{
     width: 100%;
     height: 100vh;
-    background-color: #f3f5f9;
+    background-color: var(--primary-colour);
     display: flex;
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -23,17 +41,22 @@ section{
     font-size: 35px;
 }
 
+#Welcome{
+    color: var(--welcome-colour);
+}
+
 #current{
     font-size: 25px;
-    color: #97C7C3;
+    color: var(--shape-colour);
 }
 
 #c_status{
     margin-top: -10px;
-    color: #73E2CA;
+    color: var(--secondary-colour);
 }
 
 .aboutMe,
+.skills,
 .projects,
 .contactMe{
     font-size: 14px;
@@ -43,21 +66,106 @@ section{
     justify-content: center;
     text-align: center;
 }
-
-#aboutMeTxt{
-    justify-content: center;
-    align-items: center;
-    margin: 20px 75px;
-    padding-top: 80px;
-    width: 50%;
-    height: 60%;
-    border-radius: 25px;
-    background-color: #97C7C3;
-    opacity: 0.3;
+.about{
+    width: 100%;
+    padding: 100px 0px;
 }
 
+.about img{
+    height: auto;
+    width: 360px;
+    margin: 50px;
+    border-radius: 4%;
+}
+
+/* .aboutTxt{
+    width: 500px;
+} */
+
 #txt{
+    margin-top: 50px;
+    width: 700px;
+    font-size: 20px;
+    color: var(--welcome-colour);
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#skills{
+    padding-bottom: 100px;
+}
+
+.CMcontainer{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 2vw;
+    width: 90%;
+    max-width: 600px;
+    height: 700px;
+    border-radius: 10px;
+}
+
+form h2{
+    color: var(--shape-colour);
+    font-weight: 800;
     font-size: 30px;
+}
+
+form input, form textarea{
+    border: 0;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background-color: var(--input-colour);
+    font-size: 16px;
+}
+
+.linksBtm a{
+    font-size: 40px;
+    color: var(--shape-colour);
+    margin: 20px 10px;
+    margin-bottom: 100px;
+}
+
+/* .skill-container{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-name{
+    color: var(--welcome-colour);
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+.skill-bar{
+    height: 14px;
+    background-color: var(--primary-colour);
+    border-radius: 3px;
+} */
+
+.percentage{
+    height: 14px;
+    background: var(--secondary-colour);
 }
 
 .index{
@@ -74,7 +182,7 @@ section{
     display: flex;
     font-size: 40px;
     font-weight: 800;
-    color: #97C7C3;
+    color: var(--shape-colour);
     letter-spacing: 2px;
     cursor: pointer;
     text-transform: uppercase;
@@ -91,7 +199,7 @@ section{
 }
 
 .nav_items li a{
-    color: #97C7C3;
+    color: var(--shape-colour);
     font-size: 20px;
     letter-spacing: 1.5px;
     text-decoration: none;
@@ -100,12 +208,12 @@ section{
 
 .nav_items li a:hover,
 .links a:hover{
-    color: #50FAD6;
+    color: var(--highlight-colour);
 }
 
 .links a{
     font-size: 30px;
-    color: #97C7C3;
+    color: var(--shape-colour);
     margin: 20px 10px
 }
 
@@ -136,7 +244,7 @@ section{
     list-style: none;
     width: 20px;
     height: 20px;
-    background-color: #97C7C3;
+    background-color: var(--shape-colour);
     top: -150px;
     animation: animate 25s linear infinite;
 }
@@ -251,18 +359,23 @@ nav{
     height: 4px;
     width: 45px;
     bottom: 10px;
-    background-color: #97C7C3;
+    background-color: var(--shape-colour);
 }   
 
 h1{
     display: block; 
     font-size: 6em;
     font-weight: 800;
-    color: #97C7C3
+    color: var(--shape-colour);
+}
+
+.about h1{
+    padding-left: 100px;
+    margin-bottom: 100px;
 }
 
 .multiText{
-    color: #73E2CA;
+    color: var(--secondary-colour);
     text-transform: capitalize;
 }
 
@@ -271,13 +384,122 @@ p{
     padding-top: 10px;
     width: 90%;
     font-size: 1.6rem;
-    color: black;
+    color: var(--welcome-colour);
 }
 
 .btn{
     display: block;
     position: relative;
     width: 100%;
+}
+
+.container{
+    display: inline-block;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: border-box;
+    margin: 10px 40px;
+    border: 1px solid var(--welcome-colour);
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card p{
+    font-size: 16px;
+    color: var(--welcome-colour);
+}
+
+.front1, .back1,
+.front2, .back2,
+.front3, .back3,
+.front4, .back4,
+.front5, .back5,
+.front6, .back6{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.front1,
+.front2,
+.front3,
+.front4,
+.front5,
+.front6{
+    background-position: center;
+    background-size: cover;
+}
+
+.front1{
+    background-image: url(/static/imgs/StreathamGo.png);
+}
+
+.front2{
+    background-image: url(/static/imgs/tetris.png);
+}
+
+.front3{
+    background-image: url(/static/imgs/personalWebsite.png);
+}
+
+.front4{
+    background-image: url(/static/imgs/WeatherApp.png);
+}
+
+.front5{
+    background-image: url(/static/imgs/cardGame.jpg);
+}
+
+.front6{
+    background-image: url(/static/imgs/cycling_management.jpg);
+}
+
+.back1, 
+.back2,
+.back3,
+.back4,
+.back5,
+.back6{
+    background-color: lightgrey;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back1 h2,
+.back2 h2,
+.back3 h2,
+.back4 h2,
+.back5 h2,
+.back6 h2{
+    font-size: 25px;
+    color: var(--welcome-colour);
+    text-align: center;
+}
+
+.container a{
+    color: var(--shape-colour);
+    font-size: 50px;
+    margin: 20px 10px
+}
+
+.container a:hover{
+    color: var(--highlight-colour);
 }
 
 button{
@@ -287,7 +509,7 @@ button{
     font-size: 25px;
     font-weight: 400;
     color: #fff;
-    background-color: #97C7C3;
+    background-color: var(--shape-colour);
     border-radius: 10px;
     padding: 8px 14px;
     margin: 40px 5px;
@@ -296,7 +518,7 @@ button{
 }
 
 button:hover{
-    background-color: #73E2CA;
+    background-color: var(--secondary-colour);
 }
 
 @media (max-width: 768px) {
@@ -307,5 +529,14 @@ button:hover{
     
     h1{
         font-size: 3em;
+    }
+
+    .about h1{
+        padding-left: 0px;
+    }
+
+    .CMcontainer{
+        height: 100%;
+        width: 300px;
     }
 }
