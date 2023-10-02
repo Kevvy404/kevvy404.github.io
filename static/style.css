@@ -14,6 +14,7 @@
     --secondary-colour: #73E2CA;
     --shape-colour: #97C7C3;
     --highlight-colour: #50FAD6;
+    --input-colour: #bcbcbc;
 }
 
 .dark-theme{
@@ -22,6 +23,7 @@
     --secondary-colour: #D69DE6;
     --shape-colour: #DD60FF;
     --highlight-colour: #E811FE;
+    --input-colour: #bcbcbc;
 }
 
 section{
@@ -94,48 +96,42 @@ section{
     align-items: center;
 }
 
-/* 
-#aboutMeContainer {
-    width: 50%;
-    margin-left: 50px;
-    padding-left: 20px;
-    text-indent: 0;
-}
-
-#aboutMeTxt {
-    float: left;
-    display: flex;
-    margin-top: 40px;
-    height: 70%;
-}
-
-#txt {
-    font-size: 20px;
-    margin-top: 120px;
-    margin-left: 50px;
-    width: 50%;
-    padding-left: 20px;
-    text-indent: 0;
-}
-
-.imageContainer {
-    scale: 30%;
-    width: 50%;
-    margin-top: 40px;
-    margin-left: 50px;
-    padding-left: 20px;
-    text-indent: 0;
-}
-
-#pfp{
-    scale: 85%;
-    margin-left: 150px;
-    border-radius: 5%;
-    float: right;
-} */
-
 #skills{
     padding-bottom: 100px;
+}
+
+.CMcontainer{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 2vw;
+    width: 90%;
+    max-width: 600px;
+    height: 700px;
+    border-radius: 10px;
+}
+
+form h2{
+    color: var(--shape-colour);
+    font-weight: 800;
+    font-size: 30px;
+}
+
+form input, form textarea{
+    border: 0;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background-color: var(--input-colour);
+    font-size: 16px;
 }
 
 /* .skill-container{
