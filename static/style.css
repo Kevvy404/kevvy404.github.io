@@ -82,10 +82,6 @@ section .contactMe{
     border-radius: 4%;
 }
 
-/* .aboutTxt{
-    width: 500px;
-} */
-
 #txt{
     margin-top: 50px;
     width: 700px;
@@ -505,7 +501,8 @@ button:hover{
     background-color: var(--secondary-colour);
 }
 
-@media screen and (min-width: 768px){
+
+@media (max-width: 1500px){
 
     .card{
         width: 300px;
@@ -523,25 +520,5 @@ button:hover{
 
     .container p{
         font-size: 13px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .logo{
-        font-size: 30px;
-    }
-    
-    h1{
-        font-size: 3em;
-    }
-
-    .about h1{
-        padding-left: 0px;
-    }
-
-    .CMcontainer{
-        height: 100%;
-        width: 300px;
     }
 }
