@@ -35,10 +35,6 @@ section{
     scroll-snap-stop: always;
 }
 
-section .contactMe{
-    height: 120vh;
-}
-
 .status{
     display: block;
     position: relative;
@@ -502,7 +498,7 @@ button:hover{
 }
 
 
-@media (max-width: 1500px){
+@media (max-width: 1450px){
 
     .card{
         width: 300px;
