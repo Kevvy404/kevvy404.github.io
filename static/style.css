@@ -35,6 +35,10 @@ section{
     scroll-snap-stop: always;
 }
 
+section .contactMe{
+    height: 120vh;
+}
+
 .status{
     display: block;
     position: relative;
@@ -142,26 +146,6 @@ form input, form textarea{
     margin: 20px 10px;
     margin-bottom: 100px;
 }
-
-/* .skill-container{
-    width: 100%;
-    max-width: 600px;
-    padding: 0 20px;
-}
-
-.skill-name{
-    color: var(--welcome-colour);
-    margin: 20px 0;
-    font-size: 18px;
-    font-weight: 650;
-    text-transform: uppercase;
-}
-
-.skill-bar{
-    height: 14px;
-    background-color: var(--primary-colour);
-    border-radius: 3px;
-} */
 
 .percentage{
     height: 14px;
@@ -519,6 +503,27 @@ button{
 
 button:hover{
     background-color: var(--secondary-colour);
+}
+
+@media screen and (min-width: 768px){
+
+    .card{
+        width: 300px;
+        height: 300px;
+    }
+
+    .back1 h2,
+    .back2 h2,
+    .back3 h2,
+    .back4 h2,
+    .back5 h2,
+    .back6 h2{
+        font-size: 16px;
+    }
+
+    .container p{
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 768px) {
