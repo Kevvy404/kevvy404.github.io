@@ -72,15 +72,14 @@ section{
 }
 
 .about img{
-    height: auto;
     width: 360px;
     margin: 50px;
+    margin-top: 150px;
     border-radius: 4%;
 }
 
 #txt{
-    margin-top: 50px;
-    width: 700px;
+    width: 750px;
     font-size: 20px;
     color: var(--welcome-colour);
 }
@@ -347,7 +346,6 @@ h1{
 
 .about h1{
     padding-left: 100px;
-    margin-bottom: 100px;
 }
 
 .multiText{
