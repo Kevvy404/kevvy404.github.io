@@ -404,7 +404,8 @@ p{
 .front4, .back4,
 .front5, .back5,
 .front6, .back6,
-.front7, .back7{
+.front7, .back7,
+.front8, .back8{
     border-radius: 10px;
     height: 100%;
     width: 100%;
@@ -418,7 +419,8 @@ p{
 .front4,
 .front5,
 .front6,
-.front7{
+.front7,
+.front8{
     background-position: center;
     background-size: cover;
 }
@@ -451,13 +453,18 @@ p{
     background-image: url(/static/imgs/golfswing.png);
 }
 
+.front8{
+    background-image: url(/static/imgs/jurassic.png);
+}
+
 .back1, 
 .back2,
 .back3,
 .back4,
 .back5,
 .back6,
-.back7{
+.back7,
+.back8{
     background-color: lightgrey;
     transform: rotateY(180deg);
     display: flex;
@@ -472,7 +479,8 @@ p{
 .back4 h2,
 .back5 h2,
 .back6 h2,
-.back7 h2{
+.back7 h2,
+.back8 h2{
     font-size: 25px;
     color: var(--welcome-colour);
     text-align: center;
@@ -526,7 +534,8 @@ button:hover, .btn:hover{
     .back4 h2,
     .back5 h2,
     .back6 h2,
-    .back7 h2{
+    .back7 h2
+    .back8 h2{
         font-size: 16px;
     }
 
