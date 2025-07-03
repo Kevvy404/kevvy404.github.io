@@ -406,8 +406,7 @@ p{
 .front6, .back6,
 .front7, .back7,
 .front8, .back8,
-.front9, .back9,
-.front10, .back10{
+.front9, .back9{
     border-radius: 10px;
     height: 100%;
     width: 100%;
@@ -423,8 +422,7 @@ p{
 .front6,
 .front7,
 .front8,
-.front9,
-.front10{
+.front9{
     background-position: center;
     background-size: cover;
 }
@@ -465,10 +463,6 @@ p{
     background-image: url(/static/imgs/url-shortener.jpg);
 }
 
-.front10{
-    background-image: url(/static/imgs/url-shortener.jpg);
-}
-
 .back1, 
 .back2,
 .back3,
@@ -477,8 +471,7 @@ p{
 .back6,
 .back7,
 .back8,
-.back9,
-.back10{
+.back9{
     background-color: lightgrey;
     transform: rotateY(180deg);
     display: flex;
@@ -495,8 +488,7 @@ p{
 .back6 h2,
 .back7 h2,
 .back8 h2,
-.back9 h2,
-.back10 h2{
+.back9 h2{
     font-size: 25px;
     color: var(--welcome-colour);
     text-align: center;
@@ -552,8 +544,7 @@ button:hover, .btn:hover{
     .back6 h2,
     .back7 h2
     .back8 h2,
-    .back9 h2,
-    .back10 h2{
+    .back9 h2{
         font-size: 16px;
     }
 
